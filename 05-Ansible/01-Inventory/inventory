@@ -1,3 +1,4 @@
+10.0.0.4
 172.31.0.200
 172.31.0.201
 
@@ -7,7 +8,8 @@
 
 [web]
 172.31.0.200  ansible_ssh_user=amit
-172.31.0.201
+10.0.0.5   ansible_ssh_user=root
+10.0.0.4
 
 [web:vars]
 ansible_ssh_user=web
@@ -28,5 +30,5 @@ ansible
 
 
 [dc:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_pass=vagrant
+ansible_ssh_user=root
+ansible_ssh_pass=root

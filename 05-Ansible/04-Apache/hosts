@@ -6,7 +6,7 @@
 
 
 [web]
-172.31.0.201
+10.0.0.4
 
 
 [ansible]
@@ -25,5 +25,5 @@ ansible
 
 
 [dc:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_pass=vagrant
+ansible_ssh_user=root
+ansible_ssh_pass=root
