@@ -32,7 +32,7 @@ node('master') {
 	
     	
     stage('SonarQube') {
-      withSonarQubeEnv('Sonar') {
+      withSonarQubeEnv('jenkins-sonar') {
       sh 'mvn sonar:sonar'
      }
    }  
