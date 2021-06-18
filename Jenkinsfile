@@ -1,7 +1,7 @@
 node('master') {
     
   // Get Artifactory Server Instance Details
-  def server = Artifactory.server "01"
+  def server = Artifactory.server "jfrog"
   def buildInfo = Artifactory.newBuildInfo()
   
   // Project Variables
@@ -9,7 +9,7 @@ node('master') {
 	
     
     stage('Git-CheckOut') {
-      git branch: 'main', url: 'https://github.com/amitvashisttech/devops301-mindtree-15-June-2021.git'
+      git branch: 'main', url: 'https://github.com/prankurjain/devops301-mindtree-15-June-2021.git'
     }  
     
   dir(project_path) {
